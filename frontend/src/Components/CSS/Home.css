@@ -1,0 +1,31 @@
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container h2{
+    text-decoration: none;
+    
+}
+
+.container .btn{
+    font-family: "Winky Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+    height: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 10px;
+    color: rgb(16, 14, 52);
+    border: 1px solid white;
+    background: rgb(216, 216, 216);
+    
+}
+
+.container .btn:hover{
+    transition: background .2s ease-in-out;
+    color: rgb(216, 216, 216);
+    background: rgb(16, 14, 52);
+}
+

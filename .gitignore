@@ -1,0 +1,10 @@
+# Node
+node_modules/
+.env
+npm-debug.log*
+
+# React build
+client/build
+
+# OS
+.DS_Store

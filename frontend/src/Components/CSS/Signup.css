@@ -1,0 +1,121 @@
+.container h1{
+  font-family: "Winky Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  position: relative;
+  color: rgb(225, 225, 225);
+  text-align: center;
+  text-decoration: underline;
+}
+
+
+.form {
+  
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 800px;
+}
+
+.form label {
+  margin-top: 8px;
+  margin-bottom: 5px;
+  margin-left: 5px;
+}
+
+.form input[type="text"],
+.form input[type="email"],
+.form input[type="password"] {
+  font-family: "Winky Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  background: rgb(16, 14, 52);
+  color: white;
+  border: 1px solid white;
+  height: 30px;
+  padding: 5px;
+  padding-left: 10px;
+  border-radius: 15px;
+  font-size: 15px;
+  height: 40px;
+}
+
+.form input[type="text"]:hover,
+.form input[type="email"]:hover,
+.form input[type="password"]:hover {
+  background-color: rgb(255, 255, 255);
+  color: rgb(16, 14, 52);
+  transition: background 0.2s ease-in-out;
+}
+
+.form input[type="file"] {
+  font-family: "Winky Sans", sans-serif;
+  color: rgb(255, 255, 255);
+  border-radius: 15px;
+  padding: 10px;
+  padding-left: 10px;
+  padding-bottom: 5px;
+  border: 1px solid white;
+  background: rgb(16, 14, 52);
+}
+
+.form input[type="file"]::file-selector-button {
+  font-family: "Winky Sans", sans-serif;
+  margin-right: 20px;
+  margin-bottom: 5px;
+  border: 1px solid white;
+  background: rgb(255, 255, 255);
+  padding: 5px 20px;
+  border-radius: 10px;
+  color: rgb(16, 14, 52);
+  cursor: pointer;
+  height: 30px;
+  transition: background 0.2s ease-in-out;
+}
+
+input[type="file"]::file-selector-button:hover {
+  background: rgb(16, 14, 52);
+  color: white;
+  border: 1px solid white;
+  transition: background 0.2s ease-in-out;
+}
+
+.container .form .btn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Winky Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  background: white;
+  color: rgb(16, 14, 52);
+  border: 1px solid white;
+  
+  padding: 5px;
+  padding-left: 10px;
+  border-radius: 15px;
+  font-size: 15px;
+  height: 40px;
+  margin-top: 30px;
+}
+
+.form .btn:hover{
+  color: white;
+  background: rgb(16, 14, 52);
+  transition: background 0.2s ease-in-out;
+}
+
+.form .text{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.form .text a{
+  color: rgb(42, 180, 211);
+}
+
+.form .text a:hover{
+  color: greenyellow;
+  transition: background 0.2s ease-in-out;
+}

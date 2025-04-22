@@ -1,0 +1,48 @@
+.modal-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-container label{
+    margin-top: 10px;
+    margin-bottom: 5px;
+    padding-left: 5px;
+}
+
+.modal-container input, select{
+    padding: 5px;
+    padding-left: 15px;
+    font-family: "Winky Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    background: rgb(16, 14, 52);
+    color: white;
+    border: 1px solid white;
+    border-radius: 10px;
+    font-size: 15px;
+}
+
+.modal-container input:hover, select:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(16, 14, 52);
+    transition: background 0.2s ease-in-out;
+}
+
+.modal-container .btn{
+    font-family: "Winky Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    background: white;
+    color: rgb(16, 14, 52);
+    border: 1px solid white;
+    height: 30px;
+    padding: 5px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.modal-container .btn:hover{
+    color: white;
+    background: rgb(16, 14, 52);
+    transition: background 0.2s ease-in-out;
+}

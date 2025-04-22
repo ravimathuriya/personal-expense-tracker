@@ -1,0 +1,113 @@
+.navbar {
+  display: flex;
+  position: fixed;
+  width: 100%;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  font-weight: 600;
+  color: rgb(204, 204, 204);
+  text-shadow: 3px 3px 4px rgb(243, 176, 88);
+  /* text-shadow: 5px 5px 4px grey; */
+
+  text-transform: uppercase;
+}
+
+img {
+  filter: invert(100%);
+  margin-left: 10px;
+  height: 90px;
+  width: 90px;
+}
+
+.button {
+  position: absolute;
+  right: 10px;
+  top: 25px;
+}
+
+.button .btn {
+  font-family: "Winky Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  width: 70px;
+  height: 30px;
+  border-radius: 10px;
+  color: rgb(16, 14, 52);
+  margin: 5px;
+  border: 1px solid white;
+  background: rgb(216, 216, 216);
+  transition: background 0.2s ease-in-out;
+}
+
+.btn:hover {
+  color: white;
+  background: rgb(16, 14, 52);
+  transition: background 0.2s ease-in-out;
+}
+
+.profileIcon {
+  position: absolute;
+  right: 25px;
+  top: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Winky Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  border-radius: 10px;
+  padding: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: rgb(16, 14, 52);
+  margin: 5px;
+  border: 1px solid white;
+  background: rgb(216, 216, 216);
+  cursor: pointer;
+}
+
+.profileIcon span {
+  padding-left: 5px;
+}
+
+.profileIcon:hover {
+  color: white;
+  background: rgb(16, 14, 52);
+  transition: background 0.2s ease-in-out;
+}
+
+.dropdown {
+  position: absolute;
+  right: 20px;
+  top: 60%;
+  padding: 10px;
+  z-index: 100;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown .logout-btn {
+  font-family: "Winky Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  border-radius: 10px;
+  padding: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background: rgb(16, 14, 52);
+  margin: 5px;
+  border: 1px solid white;
+  color: rgb(216, 216, 216);
+  cursor: pointer;
+
+}
+
+.logout-btn:hover{
+  color: rgb(16, 14, 52);
+  background: rgb(216, 216, 216);
+  transition: background 0.2s ease-in-out;
+}
