@@ -25,7 +25,7 @@ const UserState = (props) => {
       const data = await response.json();
       return data;
     } catch (error) {
-      console.log("Issue while registering the user");
+      console.log("Issue while registering the user", data);
     }
   };
 
