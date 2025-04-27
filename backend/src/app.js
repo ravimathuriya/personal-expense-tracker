@@ -7,7 +7,8 @@ const app = express();
 app.use(cors({
     origin: [
   'https://personal-expense-tracker-frontend-phi.vercel.app',
-  'https://personal-expense-tracker-frontend-ddh2lb8xy.vercel.app'
+  'https://personal-expense-tracker-frontend-ddh2lb8xy.vercel.app',
+    'https://personal-expense-tracker-frontend-exce35g2t.vercel.app'
 ],
     credentials:true
 }))
