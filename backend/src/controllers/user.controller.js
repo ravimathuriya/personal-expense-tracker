@@ -19,6 +19,8 @@ const registerUser = asyncHandler(async (req, res) => {
   //Get the data from req.body
   const { fullName, email, password } = req.body;
 
+  console.log(req.body)
+
   //check if any filed is empty or not available
   if (!(fullName && email && password)) {
     res.status(500).json({
@@ -29,6 +31,8 @@ const registerUser = asyncHandler(async (req, res) => {
   //check the user if already registered by the email
   const existedUser = await User.findOne({ email });
 
+  console.log(existedUser)
+  
   if (existedUser) {
     res.status(400).json({
       message: "User already registered",
@@ -36,6 +40,8 @@ const registerUser = asyncHandler(async (req, res) => {
   } 
   //check the profilePic path from req.files
   const profilePicPath = await req.files?.profilePic[0]?.path;
+
+  console.log(profilePicPath)
   
   if (!profilePicPath) {
     res.status(400).json({
@@ -45,7 +51,9 @@ const registerUser = asyncHandler(async (req, res) => {
     
     //uplaod the file on cloudinary
     const uploadProfileImage = await uploadOnCloudinary(profilePicPath);
-    
+
+  console.log(uploadProfileImage)
+  
     if (!uploadProfileImage) {
       res.status(500).json({
         message: "Issue while uploading the image on cloudinary",
@@ -61,6 +69,8 @@ const registerUser = asyncHandler(async (req, res) => {
       password: password,
       profilePic: uploadProfileImage.url,
     });
+
+      console.log(createUser)
 
     if (!createUser) {
       res.status(400).json({
