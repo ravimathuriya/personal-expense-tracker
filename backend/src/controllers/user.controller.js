@@ -39,18 +39,18 @@ const registerUser = asyncHandler(async (req, res) => {
     });
   } 
   //check the profilePic path from req.files
-  const profilePicPath = await req.files?.profilePic[0]?.path;
+  const profilePicbuffer = await req.files?.profilePic[0]?.buffer;
 
-  console.log(profilePicPath)
+  console.log(profilePicbuffer)
   
-  if (!profilePicPath) {
+  if (!profilePicbuffer) {
     res.status(400).json({
         message: "Profile pic required to upload",
       });
     }
     
     //uplaod the file on cloudinary
-    const uploadProfileImage = await uploadOnCloudinary(profilePicPath);
+    const uploadProfileImage = await uploadOnCloudinary(profilePicbuffer);
 
   console.log(uploadProfileImage)
   
