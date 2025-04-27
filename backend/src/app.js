@@ -5,7 +5,10 @@ import cookieParser from "cookie-parser";
 const app = express();
 
 app.use(cors({
-    origin: process.env.CORS_ORIGIN,
+    origin: [
+  'https://personal-expense-tracker-frontend-phi.vercel.app',
+  'https://personal-expense-tracker-frontend-ddh2lb8xy.vercel.app'
+],
     credentials:true
 }))
 
