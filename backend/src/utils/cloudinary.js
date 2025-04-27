@@ -5,7 +5,7 @@ import "dotenv/config";
 cloudinary.config({
   cloud_name: process.env.CLOUD_NAME,
   api_key: process.env.API_KEY,
-  api_secret: process.env.API_SECRET, // (you had a typo here: "API_SCRET")
+  api_secret: process.env.API_SCRET, 
 });
 
 const uploadOnCloudinary = async (fileBuffer) => {
