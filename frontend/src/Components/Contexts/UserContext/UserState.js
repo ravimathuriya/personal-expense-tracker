@@ -14,7 +14,7 @@ const UserState = (props) => {
       formData.append("profilePic", userPic);
 
       const response = await fetch(
-        `${process.env.REACT_APP_URL}/user/registeruser`,
+        `https://personal-expense-tracker-sigma.vercel.app/user/registeruser`,
         {
           method: "POST",
           credentials: "include",
